@@ -17,7 +17,7 @@
 			<transform 00="-0" 02="-1" 20="1" 22="-0" 30="295.800201" 31="4.567918" 32="411.588806"/>
 		</mesh>
 		<mesh id="workbench_mesh" file_name="meshes/workbench.mesh">
-			<transform 00="0.999991" 02="-0.004186" 11="1" 20="0.004186" 22="0.999991" 30="326.504181" 31="7.856663" 32="234.333771"/>
+			<transform 00="0.999991" 02="-0.004186" 20="0.004186" 22="0.999991" 30="326.504181" 31="7.856663" 32="234.333771"/>
 		</mesh>
 		<mesh id="building_mesh" file_name="meshes/island_33_terminal_building.mesh">
 			<transform 00="0.999856" 02="-0.016962" 20="0.016962" 22="0.999856" 30="281.774353" 31="6.888823" 32="234.702896"/>
@@ -50,7 +50,7 @@
 			<transform 00="0.999712" 02="-0.023986" 20="0.023986" 22="0.999712" 30="278.649994" 31="3.630022" 32="199.199997"/>
 		</physics_mesh>
 		<physics_mesh id="workbench_phys" file_name="meshes/workbench_phys.phys">
-			<transform 00="-1" 22="-1" 30="324.839203" 31="7.856663" 32="234.333771"/>
+			<transform 02="-0" 20="0" 30="326.467194" 31="7.856663" 32="234.317078"/>
 		</physics_mesh>
 		<physics_mesh id="door_01_phys" parent_id="door_01" file_name="meshes/door_hospital_phys.phys">
 			<transform 00="0.017452" 02="0.999848" 20="-0.999848" 22="0.017452" 30="211.925415" 31="6.921576" 32="256.713959"/>
@@ -263,7 +263,7 @@
 		</edit_area>
 		<edit_area id="train_edit">
 			<transform 00="-0.017877" 02="-0.99984" 20="0.99984" 22="-0.017877" 30="348.772461" 31="11.973286" 32="233.663376"/>
-			<size x="20" y="10" z="40"/>
+			<size x="45" y="10" z="40"/>
 		</edit_area>
 		<edit_area id="office_bed_01" grid_size="5" is_static="true" default_vehicle="bed" is_invisible_vehicle="true">
 			<transform 00="-0.023139" 02="-0.999732" 20="0.999732" 22="-0.023139" 30="208.068726" 31="7.328556" 32="253.973389"/>

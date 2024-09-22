@@ -17,7 +17,7 @@
 			<transform 00="-0" 02="-1" 20="1" 22="-0" 30="295.800201" 31="4.567918" 32="411.588806"/>
 		</mesh>
 		<mesh id="workbench_mesh" file_name="meshes/workbench.mesh">
-			<transform 00="0.999991" 02="-0.004186" 20="0.004186" 22="0.999991" 30="326.504181" 31="7.856663" 32="234.333771"/>
+			<transform 00="-1" 22="-1" 30="324.839203" 31="7.856663" 32="234.333771"/>
 		</mesh>
 		<mesh id="building_mesh" file_name="meshes/island_33_terminal_building.mesh">
 			<transform 00="0.999856" 02="-0.016962" 20="0.016962" 22="0.999856" 30="281.774353" 31="6.888823" 32="234.702896"/>
@@ -50,7 +50,7 @@
 			<transform 00="0.999712" 02="-0.023986" 20="0.023986" 22="0.999712" 30="278.649994" 31="3.630022" 32="199.199997"/>
 		</physics_mesh>
 		<physics_mesh id="workbench_phys" file_name="meshes/workbench_phys.phys">
-			<transform 02="-0" 20="0" 30="326.470215" 31="7.856663" 32="234.31572"/>
+			<transform 00="-1" 22="-1" 30="324.839203" 31="7.856663" 32="234.333771"/>
 		</physics_mesh>
 		<physics_mesh id="door_01_phys" parent_id="door_01" file_name="meshes/door_hospital_phys.phys">
 			<transform 00="0.017452" 02="0.999848" 20="-0.999848" 22="0.017452" 30="211.925415" 31="6.921576" 32="256.713959"/>
@@ -257,13 +257,13 @@
 	</lights_tube>
 	<screens/>
 	<edit_areas>
-		<edit_area id="dock_edit">
-			<transform 00="-0.023919" 02="-0.999714" 20="0.999714" 22="-0.023919" 30="303.658539" 31="5.597944" 32="461.148499"/>
-			<size x="70" y="30" z="100"/>
+		<edit_area id="dock_edit" grid_size="2">
+			<transform 00="-0.023919" 02="-0.999714" 20="0.999714" 22="-0.023919" 30="303.658539" 31="3.344771" 32="433.811523"/>
+			<size x="22.5" y="20.5" z="57.25"/>
 		</edit_area>
-		<edit_area id="train_edit">
-			<transform 00="-0.017877" 02="-0.99984" 20="0.99984" 22="-0.017877" 30="348.772461" 31="17.093502" 32="233.663376"/>
-			<size x="45" y="20" z="40"/>
+		<edit_area id="train_edit" grid_size="7">
+			<transform 00="-0.017877" 02="-0.99984" 20="0.99984" 22="-0.017877" 30="313.00705" 31="10.022367" 32="230.336166"/>
+			<size x="5" y="6" z="25"/>
 		</edit_area>
 		<edit_area id="office_bed_01" grid_size="5" is_static="true" default_vehicle="bed" is_invisible_vehicle="true">
 			<transform 00="-0.023139" 02="-0.999732" 20="0.999732" 22="-0.023139" 30="208.068726" 31="7.328556" 32="253.973389"/>
@@ -280,7 +280,7 @@
 			<size x="1.970327" y="1.652396" z="1.461125"/>
 		</interactable>
 		<interactable id="train_workbench_interact" target_object_id="train_edit" label="Workbench" interact_type="2">
-			<transform 30="326.548096" 31="7.856663" 32="234.333771"/>
+			<transform 30="324.724121" 31="7.856663" 32="234.333771"/>
 			<size x="1.180149" y="1.861132" z="2.192832"/>
 		</interactable>
 		<interactable id="door_01_interact" parent_id="door_01" target_object_id="door_01_logic" label="Door">
